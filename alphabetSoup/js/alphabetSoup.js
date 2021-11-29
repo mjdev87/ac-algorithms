@@ -15,6 +15,10 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 /**
 Examples:
 
+Method:
+
+.split()
+
 var result = alphabetSoup("hello");
 console.log(result) // "ehllo"
 
@@ -34,6 +38,9 @@ console.log(result) // "ghimmnorstyy"
 **/
 
 function alphabetSoup(str) {
-	//Your code here
-	
+	let letters = str.split("").sort().join("");
+	return letters;
 }
+
+var letters = alphabetSoup("i am a string");
+console.log(letters.trim());
