@@ -25,6 +25,18 @@ console.log(result) // "1-3"
 
 **/
 
-function dashInsert(str) {
-	// Your code
+function dashInsert(num) {
+	// Your code  return numStrWithDashes;
+	let numArr = num.toString().split("");
+	let numStr = "";
+	for (let i = 0; i < numArr.length; i++) {
+		if (numArr[i] % 2 === 1 & numArr[i + 1] % 2 === 1) {
+			numStr += numArr[i] + "-";
+		} else {
+			numStr += numArr[i];
+		}
+	}
+	return numStr;
 }
+
+console.log(dashInsert(2325522111));
