@@ -41,5 +41,11 @@ console.log(result) // -1
 
 function isBigger(a, b) {
 	//Your code here
-	
+	if (a > b) {
+		console.log("true");
+	} else if (a < b ) {
+		console.log("false");
+	} else {
+		console.log("0");
+	}
 }
