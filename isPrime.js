@@ -32,5 +32,17 @@ console.log(result) // false
 **/
 
 function isPrime(num) {
-	// Your code
+	if (num === 2) {
+		console.log("true");
+	} else if (num > 1 && num < 65537) {
+		for (let i = 2; i < num; i++) {
+			if (num % i === 0) {
+				return false;
+			} else {
+				return true;
+			}
+		}
+	} else {
+		return false;
+	}
 }
