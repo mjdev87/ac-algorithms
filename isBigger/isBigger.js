@@ -39,13 +39,24 @@ console.log(result) // -1
 
 
 
-function isBigger(a, b) {
-	//Your code here
-	if (a > b) {
-		console.log("true");
-	} else if (a < b ) {
-		console.log("false");
-	} else {
-		console.log("0");
-	}
+// function isBigger(a, b) {
+// 	//Your code here
+// 	if (a > b) {
+// 		console.log("true");
+// 	} else if (a < b ) {
+// 		console.log("false");
+// 	} else {
+// 		console.log("0");
+// 	}
+// }
+
+//Ternary Operator and Arrow Function Update to isBigger
+var isBigger = (a, b) => {
+	return (a > b) ? "true"
+		: (a < b) ? "false"
+		: "0";
 }
+
+//isBigger(2, 2);
+var result1 = isBigger(2, 2);
+console.log(result1);
