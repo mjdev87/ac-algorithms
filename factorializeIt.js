@@ -8,7 +8,14 @@
 // Check out Arithmetic Operators https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators
 
 function factorializeIt(num) {
-  //your code here
-}
+  if (num <= 0) {
+    console.log("Not a Positive Integer");
+  } else {
+    for (let i = num - 1; i >= 1; i--) {
+      num = num * i;
+    }
+    return num;
+  }
+ }
 
 factorializeIt(5);
